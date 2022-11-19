@@ -21,7 +21,7 @@ function App() {
     const res = await openai.createImage({
       prompt: prompt,
       n: 1,
-      size: "512x512",
+      size: "256x256",
     });
     setLoading(false);
     setResult(res.data.data[0].url);
